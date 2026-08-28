@@ -1,0 +1,19 @@
+theme:
+  name: material
+  favicon: assets/euaiactfaq192icon.png
+  logo: assets/euaiactfaq192icon.png
+  # ... 保留其他原本設定 ...
+
+extra:
+  manifest: manifest.webmanifest
+  meta:
+    - name: mobile-web-app-capable
+      content: "yes"
+    - name: apple-mobile-web-app-capable
+      content: "yes"
+    - name: apple-mobile-web-app-status-bar-style
+      content: "black-translucent"
+    - name: apple-mobile-web-app-title
+      content: "EU AI Act"
+    - name: theme-color
+      content: "#3f51b5"

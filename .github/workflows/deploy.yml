@@ -1,43 +1,20 @@
-name: Build and Deploy MkDocs
+Build and Deploy MkDocs #18
+All jobs
+Run details
+Re-run triggered now
+@jackylawckjackylawck
+⁠
+ 91bf29d
+main
+Status
+Failure
+Total duration
+6s
+Artifacts
+–
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository with full history
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Build documentation
-        run: mkdocs build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          publish_branch: gh-pages
-          force_orphan: true
+Annotations
+1 error
+deploy
+Unable to resolve action `actions/setup-python@f67e2a48167775264ee5d6857361ad34726e7990`, unable to find version `f67e2a48167775264ee5d6857361ad34726e7990`

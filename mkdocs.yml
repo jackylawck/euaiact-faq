@@ -1,7 +1,10 @@
 site_name: EU AI Act FAQ & Navigator | 歐盟 AI 法案雙語指南
 site_url: https://jackylawck.github.io/euiact-faq/
+site_author: EU AI Governance Working Group
+site_description: bilingual (ZH/EN) FAQ for Regulation (EU) 2024/1689. 歐盟人工智能法案企業合規雙語問答。
 repo_url: https://github.com/jackylawck/euiact-faq
 repo_name: euiact-faq
+copyright: 'Copyright &copy; 2026 EU AI Governance Working Group. Licensed under CC BY-NC 4.0'
 
 theme:
   name: material
@@ -22,6 +25,37 @@ theme:
       toggle:
         icon: material/brightness-4
         name: 切換至亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
 
 extra:
   manifest: manifest.webmanifest
@@ -36,3 +70,11 @@ extra:
       content: "EU AI Act"
     - name: theme-color
       content: "#3f51b5"
+
+nav:
+  - 首頁導覽 (Overview): index.md
+  - 01 適用邊界 (Scope): 01-scope.md
+  - 02 角色界定 (Roles): 02-roles.md
+  - 03 風險分級 (Risk Tiers): 03-risk-tier.md
+  - 04 部署者義務 (Deployer Obligations): 04-obligations.md
+  - 05 處罰與時間表 (Penalties & Timeline): 05-penalties.md

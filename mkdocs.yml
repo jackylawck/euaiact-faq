@@ -1,8 +1,27 @@
+site_name: EU AI Act FAQ & Navigator | 歐盟 AI 法案雙語指南
+site_url: https://jackylawck.github.io/euiact-faq/
+repo_url: https://github.com/jackylawck/euiact-faq
+repo_name: euiact-faq
+
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/euaiactfaq192icon.png
   logo: assets/euaiactfaq192icon.png
-  # ... 保留其他原本設定 ...
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切換至暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切換至亮色模式
 
 extra:
   manifest: manifest.webmanifest

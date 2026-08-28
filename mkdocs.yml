@@ -44,18 +44,7 @@ markdown_extensions:
   - attr_list
 
 plugins:
-  - search:
-      lang:
-        - en
-        - ja
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-      fallback_to_build_date: true
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
+  - search
 
 extra:
   manifest: manifest.webmanifest

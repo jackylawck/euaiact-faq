@@ -1,11 +1,12 @@
 {
-  "name": "EU AI Act FAQ & Navigator",
+  "name": "EU AI Act FAQ & Navigator | 歐盟 AI 法案雙語指南",
   "short_name": "EU AI Act",
-  "description": "bilingual (ZH/EN) FAQ for Regulation (EU) 2024/1689. 歐盟人工智能法案企業合規雙語問答。",
+  "description": "Bilingual Compliance Navigator for Regulation (EU) 2024/1689",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#003399",
+  "background_color": "#ffffff",
   "theme_color": "#3f51b5",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "assets/euaiactfaq192icon.png",

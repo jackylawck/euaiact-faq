@@ -1,20 +1,30 @@
-Build and Deploy MkDocs #18
-All jobs
-Run details
-Re-run triggered now
-@jackylawckjackylawck
-⁠
- 91bf29d
-main
-Status
-Failure
-Total duration
-6s
-Artifacts
-–
+name: Build and Deploy MkDocs
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-Annotations
-1 error
-deploy
-Unable to resolve action `actions/setup-python@f67e2a48167775264ee5d6857361ad34726e7990`, unable to find version `f67e2a48167775264ee5d6857361ad34726e7990`
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdocs gh-deploy --force

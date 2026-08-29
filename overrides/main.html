@@ -1,11 +1,65 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <!-- Enterprise Security Headers (OWASP & ISO 27001 Aligned) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; object-src 'none'; frame-src 'none'; worker-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+  <!-- 🛡️ 企業級 CSP 與安全標頭 (不阻擋字體與主題功能) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; object-src 'none'; frame-src 'none'; worker-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()">
+
+  <!-- 🔍 Google 網站管理員驗證 (如有 HTML Tag 驗證碼可填於此處) -->
+  <meta name="google-site-verification" content="JZ5UohX-CcP_fQV0_DI9VadkKY4ZoTTkUifL88-fIcY">
+
+  <!-- 🌐 雙語全球 SEO 核心標籤 -->
+  <meta name="author" content="EU AI Governance Working Group / Jacky Law">
+  <meta name="keywords" content="EU AI Act, Regulation (EU) 2024/1689, 歐盟人工智能法案, 歐盟AI法案, AI Governance, AI Compliance, IAPP AIGP, GDPR, ISO 42001, Responsible AI, 企業合規問答">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jackylawck.github.io/euaiact-faq/">
+
+  <!-- 📱 Open Graph 社群分享卡片 (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jackylawck.github.io/euaiact-faq/">
+  <meta property="og:title" content="EU AI Act FAQ & Navigator | 歐盟 AI 法案雙語指南">
+  <meta property="og:description" content="專業雙語（繁中/EN）歐盟《人工智能法案》(Regulation (EU) 2024/1689) 企業合規導航庫，聚焦 Provider/Deployer 責任邊界、風險分級與 IAPP AIGP 備考指引。">
+  <meta property="og:image" content="https://jackylawck.github.io/euaiact-faq/assets/euaiactfaq512icon.png">
+  <meta property="og:locale" content="zh_HK">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://jackylawck.github.io/euaiact-faq/">
+  <meta name="twitter:title" content="EU AI Act (Regulation (EU) 2024/1689) FAQ & Navigator">
+  <meta name="twitter:description" content="Authoritative bilingual (EN/ZH) compliance navigator for the European Union Artificial Intelligence Act.">
+  <meta name="twitter:image" content="https://jackylawck.github.io/euaiact-faq/assets/euaiactfaq512icon.png">
+
+  <!-- 🔍 Google 結構化資料 (Schema.org / TechnicalArticle & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "EU AI Act FAQ & Compliance Navigator (Regulation (EU) 2024/1689)",
+    "alternativeHeadline": "歐盟人工智能法案企業合規雙語知識庫與落地指引",
+    "url": "https://jackylawck.github.io/euaiact-faq/",
+    "description": "Comprehensive bilingual guide on the EU Artificial Intelligence Act covering scope, risk classification, GPAI obligations, and deployer governance.",
+    "keywords": "EU AI Act, Regulation (EU) 2024/1689, AI Governance, GDPR, IAPP AIGP, ISO 42001",
+    "author": {
+      "@type": "Organization",
+      "name": "EU AI Governance Working Group"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jacky Law"
+    },
+    "inLanguage": ["zh-Hant-HK", "en-US"],
+    "isAccessibleForFree": true,
+    "about": {
+      "@type": "Legislation",
+      "name": "Regulation (EU) 2024/1689",
+      "identifier": "CELEX:32024R1689",
+      "sameAs": "http://data.europa.eu/eli/reg/2024/1689/oj"
+    }
+  }
+  </script>
 
   <!-- Apple Touch & PWA Manifest -->
   <link rel="apple-touch-icon" sizes="192x192" href="{{ base_url }}/assets/euaiactfaq192icon.png">

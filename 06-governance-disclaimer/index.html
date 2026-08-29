@@ -59,10 +59,11 @@
 
     
     
-  <!-- Enterprise Standard CSP for Meta (Strict & Clean Console) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; object-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+  <!-- Enterprise Security Headers (OWASP & ISO 27001 Aligned) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; object-src 'none'; frame-src 'none'; worker-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()">
 
   <!-- Apple Touch & PWA Manifest -->
   <link rel="apple-touch-icon" sizes="192x192" href="../assets/euaiactfaq192icon.png">

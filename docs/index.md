@@ -44,7 +44,7 @@ The European Union Artificial Intelligence Act (Regulation (EU) 2024/1689) repre
 
 ## 官方權威原件 / Official Regulatory Assets
 
-<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">📥 下載歐盟官方英文全文 PDF (Download Official PDF)</a>
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">📥 下載歐盟官方英文全文 PDF (EUR-Lex Official PDF)</a>
 <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689" target="_blank" rel="noopener noreferrer" class="md-button">🌐 查閱 EUR-Lex 官方在線 HTML</a>
 <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer" class="md-button">🔗 EUR-Lex 官方檔案庫</a>
 

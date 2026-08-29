@@ -44,5 +44,14 @@ The European Union Artificial Intelligence Act (Regulation (EU) 2024/1689) repre
 
 ## 官方權威原件 / Official Regulatory Assets
 
-[📥 下載歐盟官方英文全文 PDF (Download Official PDF)](assets/official-eu-ai-act-2024-1689.pdf){ .md-button .md-button--primary }
-[🔗 查閱 EUR-Lex 官方檔案庫 (View EUR-Lex Dossier)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj){ .md-button }
+<a href="assets/official-eu-ai-act-2024-1689.pdf" download="official-eu-ai-act-2024-1689.pdf" class="md-button md-button--primary">📥 下載歐盟官方英文全文 PDF (Download Official PDF)</a>
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689" target="_blank" rel="noopener noreferrer" class="md-button">🌐 查閱 EUR-Lex 官方在線 HTML</a>
+<a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer" class="md-button">🔗 EUR-Lex 官方檔案庫</a>
+
+!!! info "歐盟官方公報法定發布元數據 (Official Journal Metadata)"
+    * **法規名稱 / Title**: Regulation (EU) 2024/1689 of the European Parliament and of the Council
+    * **通過日期 / Adoption Date**: 13 June 2024
+    * **公報刊登日期 / Publication Date**: 12 July 2024 (OJ L series)
+    * **CELEX 編號**: `32024R1689`
+    * **ELI 永久鏈接**: [http://data.europa.eu/eli/reg/2024/1689/oj](http://data.europa.eu/eli/reg/2024/1689/oj)
+    * **ISSN 標準號**: `1977-0677` (electronic edition)

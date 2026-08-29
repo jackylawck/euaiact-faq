@@ -1,0 +1,6 @@
+Contact: mailto:compliance@lawck.org
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: zh, en
+Canonical: https://jackylawck.github.io/euiact-faq/.well-known/security.txt
+Policy: https://jackylawck.github.io/euiact-faq/06-governance-disclaimer/
+Acknowledgments: https://jackylawck.github.io/euiact-faq/
